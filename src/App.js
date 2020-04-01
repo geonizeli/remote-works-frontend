@@ -1,10 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-function App() {
+import Topbar from './components/Topbar'
+
+export default function App() {
   return (
-    <>
-    </>
-  );
+    <Topbar />
+  )
 }
-
-export default App;

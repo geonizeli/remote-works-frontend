@@ -24,7 +24,7 @@ export default function Topbar() {
 }
 
 const Nav = styled.nav`
-  background-color: #2B2B2B;
+  background-color: #142032;
   width: 100%;
   height: 56px;
   justify-content: space-around;

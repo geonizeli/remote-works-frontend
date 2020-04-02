@@ -1,10 +1,25 @@
 import React from 'react'
-import { FaSuitcase, FaMoneyBill, FaLocationArrow } from 'react-icons/fa'
 import styled from 'styled-components'
+import Modali, { useModali } from 'modali';
+import { FaSuitcase, FaMoneyBill, FaLocationArrow } from 'react-icons/fa'
 
-export default function Card({imgUrl, title, salary, location, keywords}) {
+
+export default function Card({imgUrl, title, salary, location, keywords, link}) {
+  const [modal, toggleModal] = useModali({
+    title: title,
+    animated: true,
+    overlayClose: true,
+    buttons: [
+      <Modali.Button
+        label="Candidatar-se"
+        isStyleDefault
+        onClick={() => alert('levar usuário a vaga')}
+      />
+    ]
+  });
+
   return (
-    <CardContainer  >
+    <CardContainer onClick={toggleModal} >
       <Img src={imgUrl} alt="Company Logo"/>
 
       <Block>
@@ -31,6 +46,29 @@ export default function Card({imgUrl, title, salary, location, keywords}) {
         <FaLocationArrow />
         {location}
       </Location>
+
+      <Modali.Modal {...modal}>
+        <Img src={imgUrl} alt="Company Logo"/>
+
+        <Salary>
+          < FaMoneyBill />
+          <span>
+            {Intl.NumberFormat(
+              'pt-BR',
+              {
+                style: 'currency',
+                currency: 'BRL'
+              }).format(salary)}
+          </span>
+        </Salary>
+
+        <Keywords>{keywords}</Keywords>
+
+        <Location>
+          <FaLocationArrow />
+          {location}
+        </Location>
+      </Modali.Modal>
 
     </CardContainer>
   )

@@ -1,13 +1,16 @@
 import React from 'react'
-import { AiFillInfoCircle } from 'react-icons/ai'
 import styled from 'styled-components'
+import Modali, { useModali } from 'modali';
+import { AiFillInfoCircle } from 'react-icons/ai'
 
 import brandImg from '../../assets/obc-icon.png'
 
 export default function Topbar() {
-  function AboutModal() {
-    alert('click')
-  }
+  const [modal, toggleModal] = useModali({
+    title: "Nosso time!",
+    animated: true,
+    overlayClose: true,
+  });
 
   return (
     <Nav>
@@ -16,9 +19,149 @@ export default function Topbar() {
         <BrandText>One Bit Code</BrandText>
       </Brand>
 
-      <AboutBtn onClick={AboutModal} >
+      <AboutBtn onClick={toggleModal} >
         <AiFillInfoCircle /> Sobre nós
       </AboutBtn>
+
+      <Modali.Modal {...modal}>
+        <ModalContent>
+          <ul>
+            Front-end
+            <li>
+              <a href="https://github.com.br">
+                @example
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com.br">
+                @example
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com.br">
+                @example
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com.br">
+                @example
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com.br">
+                @example
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com.br">
+                @example
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            Back-end
+            <li>
+              <a href="https://github.com.br">
+                @example
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com.br">
+                @example
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com.br">
+                @example
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com.br">
+                @example
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com.br">
+                @example
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com.br">
+                @example
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            Crawling
+            <li>
+              <a href="https://github.com.br">
+                @example
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com.br">
+                @example
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com.br">
+                @example
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com.br">
+                @example
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com.br">
+                @example
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com.br">
+                @example
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            ChatBot
+            <li>
+              <a href="https://github.com.br">
+                @example
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com.br">
+                @example
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com.br">
+                @example
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com.br">
+                @example
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com.br">
+                @example
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com.br">
+                @example
+              </a>
+            </li>
+          </ul>
+        </ModalContent>
+      </Modali.Modal>
     </Nav>
   )
 }
@@ -52,4 +195,15 @@ const AboutBtn = styled.button`
   background: none;
   border: none;
   font-size: 16px;
+`
+
+const ModalContent = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+
+  ul {
+  list-style: none;
+  padding: 0;
+  }
 `

@@ -5,7 +5,7 @@ import MsgIcon from '../../assets/messenger-icon.png'
 
 export default function MessengerShortcut() {
   return (
-    <MsgContainer href="https://facebook.com.br" target="_blank">
+    <MsgContainer href="https://facebook.com.br" target="_blank"  rel="noopener noreferrer">
       <img src={MsgIcon} alt="Logo do Facebook Messenger" />
     </MsgContainer>
   )

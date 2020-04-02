@@ -28,32 +28,32 @@ export default function Topbar() {
           <ul>
             Front-end
             <li>
-              <a href="https://github.com.br">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 @example
               </a>
             </li>
             <li>
-              <a href="https://github.com.br">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 @example
               </a>
             </li>
             <li>
-              <a href="https://github.com.br">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 @example
               </a>
             </li>
             <li>
-              <a href="https://github.com.br">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 @example
               </a>
             </li>
             <li>
-              <a href="https://github.com.br">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 @example
               </a>
             </li>
             <li>
-              <a href="https://github.com.br">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 @example
               </a>
             </li>
@@ -62,32 +62,32 @@ export default function Topbar() {
           <ul>
             Back-end
             <li>
-              <a href="https://github.com.br">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 @example
               </a>
             </li>
             <li>
-              <a href="https://github.com.br">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 @example
               </a>
             </li>
             <li>
-              <a href="https://github.com.br">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 @example
               </a>
             </li>
             <li>
-              <a href="https://github.com.br">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 @example
               </a>
             </li>
             <li>
-              <a href="https://github.com.br">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 @example
               </a>
             </li>
             <li>
-              <a href="https://github.com.br">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 @example
               </a>
             </li>
@@ -96,32 +96,32 @@ export default function Topbar() {
           <ul>
             Crawling
             <li>
-              <a href="https://github.com.br">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 @example
               </a>
             </li>
             <li>
-              <a href="https://github.com.br">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 @example
               </a>
             </li>
             <li>
-              <a href="https://github.com.br">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 @example
               </a>
             </li>
             <li>
-              <a href="https://github.com.br">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 @example
               </a>
             </li>
             <li>
-              <a href="https://github.com.br">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 @example
               </a>
             </li>
             <li>
-              <a href="https://github.com.br">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 @example
               </a>
             </li>
@@ -130,32 +130,32 @@ export default function Topbar() {
           <ul>
             ChatBot
             <li>
-              <a href="https://github.com.br">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 @example
               </a>
             </li>
             <li>
-              <a href="https://github.com.br">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 @example
               </a>
             </li>
             <li>
-              <a href="https://github.com.br">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 @example
               </a>
             </li>
             <li>
-              <a href="https://github.com.br">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 @example
               </a>
             </li>
             <li>
-              <a href="https://github.com.br">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 @example
               </a>
             </li>
             <li>
-              <a href="https://github.com.br">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 @example
               </a>
             </li>

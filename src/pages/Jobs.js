@@ -27,10 +27,17 @@ export default function Jobs() {
       <Topbar />
 
       <Filter>
-        <form>
-          <Autocomplete
-            suggestions={suggestions}
-          />
+        <form onSubmit={(e) => (e.preventDefault())}>
+          <AutocompleteContainer>
+            <Autocomplete
+              suggestions={suggestions}
+              placeholder="Pesquise por palavras chave."
+            />
+          </AutocompleteContainer>
+
+          <button type="submit">
+            Adicionar palavra chave
+          </button>
         </form>
       </Filter>
 
@@ -59,8 +66,22 @@ const JobsContainer = styled.div`
 `
 
 const Filter = styled.div`
-  text-align: center;
   min-height: 150px;
   margin-top: 24px;
+  text-align: center;
 
+  form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: auto;
+  }
+`
+
+const AutocompleteContainer = styled.div`
+  position: relative;
+  max-width: 500px;
+
+  ul {
+  }
 `

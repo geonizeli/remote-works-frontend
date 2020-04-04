@@ -25,10 +25,12 @@ input {
 .no-suggestions {
   color: #999;
   padding: 0.5rem;
+  position: absolute;
 }
 
 .suggestions {
   border: 1px solid #999;
+  background-color: #ffffff;
   position: absolute;
   border-top-width: 0;
   list-style: none;
@@ -44,7 +46,7 @@ input {
 
 .suggestion-active,
 .suggestions li:hover {
-  background-color: #008f68;
+  background-color: #00868f;
   cursor: pointer;
   font-weight: 700;
 }

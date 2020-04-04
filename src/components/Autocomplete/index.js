@@ -3,11 +3,13 @@ import PropTypes from "prop-types";
 
 class Autocomplete extends Component {
   static propTypes = {
-    suggestions: PropTypes.instanceOf(Array)
+    suggestions: PropTypes.instanceOf(Array),
+    placeholder: PropTypes.instanceOf(String)
   };
 
   static defaultProps = {
-    suggestions: []
+    suggestions: [],
+    placeholder: ''
   };
 
   constructor(props) {
@@ -143,6 +145,7 @@ class Autocomplete extends Component {
           onChange={onChange}
           onKeyDown={onKeyDown}
           value={userInput}
+          placeholder={this.props.placeholder}
         />
         {suggestionsListComponent}
       </Fragment>
